@@ -47,6 +47,7 @@ return packer.startup(function(use)
   -- pull the latest version, no commit hash specified
 	use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/plenary.nvim" -- usefule lua functions used by lots of plugins
+  use 'nvim-lua/popup.nvim'
 --	use({ "nvim-lua/plenary.nvim", commit = "968a4b9afec0c633bc369662e78f8c5db0eba249" }) -- Useful lua functions used by lots of plugins
 --	use({ "windwp/nvim-autopairs", commit = "fa6876f832ea1b71801c4e481d8feca9a36215ec" }) -- Autopairs, integrates with both cmp and treesitter
 --  use({ "numToStr/Comment.nvim", commit = "2c26a00f32b190390b664e56e32fd5347613b9e2" })
@@ -68,8 +69,17 @@ return packer.startup(function(use)
 	use "lunarvim/darkplus.nvim"
 
   -- Markdown plugins
-  use "ellisonleao/glow.nvim"
-	-- cmp plugins
+  use "ellisonleao/glow.nvim" 
+	-- use({'jakewvincent/mkdnflow.nvim',
+  --   rocks = 'luautf8', -- Ensures optional luautf8 dependency is installed
+  --   config = function()
+  --       require('mkdnflow').setup({})
+  --   end
+  -- })
+
+
+-- cmp plugins
+
 --	use({ "hrsh7th/nvim-cmp", commit = "df6734aa018d6feb4d76ba6bda94b1aeac2b378a" }) -- The completion plugin
 --	use({ "hrsh7th/cmp-buffer", commit = "62fc67a2b0205136bc3e312664624ba2ab4a9323" }) -- buffer completions
 --	use({ "hrsh7th/cmp-path", commit = "466b6b8270f7ba89abd59f402c73f63c7331ff6e" }) -- path completions
