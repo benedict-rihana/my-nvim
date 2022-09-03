@@ -4,3 +4,5 @@ require "benedict.plugins"
 -- Tested on Linux which is working correctly. Maybe this is a macOS issue.
 -- require "benedict.colorscheme"
 require "benedict.glow"
+require "benedict.cmp"
+require "benedict.lsp"
