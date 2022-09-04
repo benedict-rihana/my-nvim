@@ -15,34 +15,64 @@ local check_backspace = function()
   return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
 end
 
--- icon mapping
+--   פּ ﯟ   some other good icons
 local kind_icons = {
-  Text = "T",
+  Text = "",
   Method = "m",
-  Function = "f",
-  Constructor = "cons",
-  Field = "F",
-  Variable = "V",
-  Class = "C",
-  Interface = "I",
-  Module = "mod",
-  Property = "P",
-  Unit = "U",
-  Value = "val",
-  Enum = "enum",
-  Keyword = "*",
-  Snippet = "snp",
-  Color = "clr",
-  File = "[F]",
-  Reference = "f->",
-  Folder = "<F>",
-  EnumMember = "[E]",
-  Constant = "",
-  Struct = "s{}",
-  Event = "!evt",
-  Operator = "->",
-  TypeParameter = "?T",
+  Function = "",
+  Constructor = "",
+  Field = "",
+  Variable = "",
+  Class = "",
+  Interface = "",
+  Module = "",
+  Property = "",
+  Unit = "",
+  Value = "",
+  Enum = "",
+  Keyword = "",
+  Snippet = "",
+  Color = "",
+  File = "",
+  Reference = "",
+  Folder = "",
+  EnumMember = "",
+  Constant = "",
+  Struct = "",
+  Event = "",
+  Operator = "",
+  TypeParameter = "",
 }
+-- find more here: https://www.nerdfonts.com/cheat-sheet
+
+-- icon mapping
+-- local kind_icons = {
+--   Text = "T",
+--   Method = "m",
+--   Function = "f",
+--   Constructor = "cons",
+--   Field = "F",
+--   Variable = "V",
+--   Class = "C",
+--   Interface = "I",
+--   Module = "mod",
+--   Property = "P",
+--   Unit = "U",
+--   Value = "val",
+--   Enum = "enum",
+--   Keyword = "*",
+--   Snippet = "snp",
+--   Color = "clr",
+--   File = "[F]",
+--   Reference = "f->",
+--   Folder = "<F>",
+--   EnumMember = "[E]",
+--   Constant = "",
+--   Struct = "s{}",
+--   Event = "!evt",
+--   Operator = "->",
+--   TypeParameter = "?T",
+-- }
 
 cmp.setup {
   snippet = {
@@ -98,7 +128,7 @@ cmp.setup {
     format = function(entry, vim_item)
       -- Kind icons
       -- vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
-      -- vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
+      vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
       vim_item.menu = ({
         nvim_lsp = "[LSP]",
         luasnip = "[Snippet]",
