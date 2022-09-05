@@ -64,9 +64,13 @@ return packer.startup(function(use)
 --	use({ "goolord/alpha-nvim", commit = "ef27a59e5b4d7b1c2fe1950da3fe5b1c5f3b4c94" })
 --	use("folke/which-key.nvim")
 
+  use "windwp/nvim-autopairs"
+  use "kyazdani42/nvim-web-devicons"
+  use "BurntSushi/ripgrep"
+  use "sharkdp/fd"
 	-- Colorschemes
-	use "folke/tokyonight.nvim"
-	use "lunarvim/darkplus.nvim"
+  -- use "folke/tokyonight.nvim"
+  -- use "lunarvim/darkplus.nvim"
 
   -- Markdown plugins
   use "ellisonleao/glow.nvim"  -- markdown preview
@@ -95,11 +99,13 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig"
   use "williamboman/mason.nvim"
   use "williamboman/mason-lspconfig.nvim"
+  use "jose-elias-alvarez/null-ls.nvim"
 --	use({ "jose-elias-alvarez/null-ls.nvim", commit = "ff40739e5be6581899b43385997e39eecdbf9465" }) -- for formatters and linters
 
 	-- Telescope
 --	use({ "nvim-telescope/telescope.nvim", commit = "d96eaa914aab6cfc4adccb34af421bdd496468b0" })
-
+  use "nvim-telescope/telescope.nvim"
+  use "nvim-telescope/telescope-media-files.nvim"
 	-- Treesitter
 --	use({
 --		"nvim-treesitter/nvim-treesitter",
