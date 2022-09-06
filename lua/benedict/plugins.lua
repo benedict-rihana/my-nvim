@@ -48,8 +48,6 @@ return packer.startup(function(use)
 	use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/plenary.nvim" -- usefule lua functions used by lots of plugins
   use 'nvim-lua/popup.nvim'
---	use({ "nvim-lua/plenary.nvim", commit = "968a4b9afec0c633bc369662e78f8c5db0eba249" }) -- Useful lua functions used by lots of plugins
---	use({ "windwp/nvim-autopairs", commit = "fa6876f832ea1b71801c4e481d8feca9a36215ec" }) -- Autopairs, integrates with both cmp and treesitter
 --  use({ "numToStr/Comment.nvim", commit = "2c26a00f32b190390b664e56e32fd5347613b9e2" })
 --	use({ "JoosepAlviste/nvim-ts-context-commentstring", commit = "88343753dbe81c227a1c1fd2c8d764afb8d36269" })
 --	use({ "kyazdani42/nvim-web-devicons", commit = "8d2c5337f0a2d0a17de8e751876eeb192b32310e" })
@@ -65,6 +63,7 @@ return packer.startup(function(use)
 --	use("folke/which-key.nvim")
 
   use "windwp/nvim-autopairs"
+  use "kyazdani42/nvim-tree.lua"
   use "kyazdani42/nvim-web-devicons"
   use "BurntSushi/ripgrep"
   use "sharkdp/fd"
@@ -100,12 +99,11 @@ return packer.startup(function(use)
   use "williamboman/mason.nvim"
   use "williamboman/mason-lspconfig.nvim"
   use "jose-elias-alvarez/null-ls.nvim"
---	use({ "jose-elias-alvarez/null-ls.nvim", commit = "ff40739e5be6581899b43385997e39eecdbf9465" }) -- for formatters and linters
 
 	-- Telescope
---	use({ "nvim-telescope/telescope.nvim", commit = "d96eaa914aab6cfc4adccb34af421bdd496468b0" })
   use "nvim-telescope/telescope.nvim"
-  use "nvim-telescope/telescope-media-files.nvim"
+  -- Only support linux so it is not very useful
+  -- use "nvim-telescope/telescope-media-files.nvim"
 	-- Treesitter
 --	use({
 --		"nvim-treesitter/nvim-treesitter",

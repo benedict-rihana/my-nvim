@@ -10,3 +10,4 @@ require "benedict.lsp"
 require "benedict.telescope"
 require "benedict.autopairs"
 require "benedict.treesitter"
+require("benedict.nvimtree")

@@ -13,7 +13,8 @@ local media_ext_ok,media_ext = pcall(require,"telescope._extensions.media_files"
 if media_ext_ok then
   telescope.load_extension("media_files")
 else
-  vim.notify("telescope media_files extension is missing")
+  -- because this extension only works for linux so it is not very useful
+--  vim.notify("telescope media_files extension is missing")
 end
 
 telescope.setup {

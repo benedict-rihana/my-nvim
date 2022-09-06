@@ -11,7 +11,7 @@ end
 --handlers.setup()
 require("mason").setup()
 require("mason-lspconfig").setup()
--- require("benedict.lsp.null-ls")
+require("benedict.lsp.null-ls")
 local status_ok, _ = pcall(require, "lspconfig")
 if not status_ok then
   vim.notify("lspconfig is missing")

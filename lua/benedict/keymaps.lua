@@ -72,5 +72,7 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("n","<leader>n","<cmd>lua require('telescope.builtin').find_files()<CR>",opts)
 keymap("n","<leader>g","<cmd>lua require('telescope.builtin').live_grep()<CR>",opts)
 
-
+-- NVim Tree
+keymap("n","<S-p>","<cmd>:NvimTreeToggle<CR>",opts) -- Open file explorer
+keymap("n","<S-q>","<cmd>:NvimTreeClose<CR>",opts) -- Close file explorer
 
