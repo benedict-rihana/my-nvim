@@ -1,6 +1,5 @@
 require "benedict.options"
 require "benedict.plugins"
-require("benedict.keymaps")
 -- looks like the color scheme is not working in macOS zsh. When scheme is enabled, the highlighter is not working. Not sure why
 -- Tested on Linux which is working correctly. Maybe this is a macOS issue.
 -- require "benedict.colorscheme"
@@ -13,3 +12,4 @@ require "benedict.treesitter"
 require("benedict.nvimtree")
 require("benedict.config")
 require("benedict.comment")
+require("benedict.keymaps")

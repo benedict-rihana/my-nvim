@@ -1,8 +1,48 @@
 local comment_ok, comment = pcall(require, "Comment")
 
 if not comment_ok then
-  vim.notify("comment plugin is missing")
+  vim.notify("Comment plugin is missing")
   return
 end
 
-comment.setup()
+comment.setup {
+  ---Add a space b/w comment and the line
+  padding = true,
+  ---Whether the cursor should stay at its position
+  sticky = true,
+  ---Lines to be ignored while (un)comment
+  ignore = nil,
+  ---LHS of toggle mappings in NORMAL mode
+  toggler = {
+    ---Line-comment toggle keymap
+    line = '<C-c>',
+    ---Block-comment toggle keymap
+    block = '<C-b>',
+  },
+  ---LHS of operator-pending mappings in NORMAL and VISUAL mode
+  opleader = {
+    ---Line-comment keymap
+    line = '<C-c>',
+    ---Block-comment keymap
+    block = '<C-b>',
+  },
+  ---LHS of extra mappings
+  extra = {
+    ---Add comment on the line above
+    above = 'gcO',
+    ---Add comment on the line below
+    below = 'gco',
+    ---Add comment at the end of line
+    eol = 'gcA',
+  },
+  ---Enable keybindings
+  ---NOTE: If given `false` then the plugin won't create any mappings
+  mappings = {
+    ---Operator-pending mapping; `gcc` `gbc` `gc[count]{motion}` `gb[count]{motion}`
+    basic = true,
+    ---Extra mapping; `gco`, `gcO`, `gcA`
+    extra = true,
+    ---Extended mapping; `g>` `g<` `g>[count]{motion}` `g<[count]{motion}`
+    extended = false,
+  },
+}

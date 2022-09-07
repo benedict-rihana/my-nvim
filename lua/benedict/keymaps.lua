@@ -40,7 +40,7 @@ keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 -- Insert --
--- Press jk fast to exit insert mode 
+-- Press jk fast to exit insert mode
 keymap("i", "wq", "<ESC>", opts)
 -- keymap("n","ff",":Telescope find_files",opts)
 -- Visual --
@@ -69,10 +69,9 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Telescope
 
-keymap("n","<leader>n","<cmd>lua require('telescope.builtin').find_files()<CR>",opts)
-keymap("n","<leader>g","<cmd>lua require('telescope.builtin').live_grep()<CR>",opts)
+keymap("n", "<leader>n", "<cmd>lua require('telescope.builtin').find_files()<CR>", opts)
+keymap("n", "<leader>g", "<cmd>lua require('telescope.builtin').live_grep()<CR>", opts)
 
 -- NVim Tree
-keymap("n","<S-p>","<cmd>:NvimTreeToggle<CR>",opts) -- Open file explorer
-keymap("n","<S-q>","<cmd>:NvimTreeClose<CR>",opts) -- Close file explorer
-
+keymap("n", "<S-p>", "<cmd>:NvimTreeToggle<CR>", opts) -- Open file explorer
+keymap("n", "<S-q>", "<cmd>:NvimTreeClose<CR>", opts) -- Close file explorer
