@@ -1,0 +1,1 @@
+require("benedict.config.autocmd")

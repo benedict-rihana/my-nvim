@@ -11,3 +11,5 @@ require "benedict.telescope"
 require "benedict.autopairs"
 require "benedict.treesitter"
 require("benedict.nvimtree")
+require("benedict.config")
+require("benedict.comment")
