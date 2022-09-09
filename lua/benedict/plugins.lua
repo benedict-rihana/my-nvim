@@ -112,7 +112,7 @@ return packer.startup(function(use)
   use "nvim-treesitter/nvim-treesitter"
   -- Git
   --	use({ "lewis6991/gitsigns.nvim", commit = "c18e016864c92ecf9775abea1baaa161c28082c3" })
-
+  use("lewis6991/gitsigns.nvim")
   -- Comment plugins
   use("numToStr/Comment.nvim")
   --use("JoosepAlviste/nvim-ts-context-commentstring")

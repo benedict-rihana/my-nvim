@@ -8,6 +8,8 @@ local formatting = null_ls.builtins.formatting
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
 local diagnostics = null_ls.builtins.diagnostics
 
+local code_action = null_ls.builtins.code_actions
+
 null_ls.setup({
   debug = false,
   sources = {
@@ -17,6 +19,7 @@ null_ls.setup({
     formatting.remark,
     formatting.clang_format,
     --    diagnostics.alex,
-    diagnostics.flake8
+    diagnostics.flake8,
+    code_action.gitsigns
   },
 })

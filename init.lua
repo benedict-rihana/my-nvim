@@ -12,4 +12,5 @@ require "benedict.treesitter"
 require("benedict.nvimtree")
 require("benedict.config")
 require("benedict.comment")
+require("benedict.gitsign")
 require("benedict.keymaps")
