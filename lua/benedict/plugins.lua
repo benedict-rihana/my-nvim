@@ -68,7 +68,7 @@ return packer.startup(function(use)
   use "BurntSushi/ripgrep"
   use "sharkdp/fd"
   -- Colorschemes
-  -- use "folke/tokyonight.nvim"
+  use "folke/tokyonight.nvim"
   -- use "lunarvim/darkplus.nvim"
 
   -- Markdown plugins

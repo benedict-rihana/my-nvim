@@ -1,7 +1,7 @@
 -- declare the cust scheme we are going to use
 -- local custcolorscheme = "tokyonight"
 
-local custcolorscheme = "darkplus"
+local custcolorscheme = "tokyonight"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. custcolorscheme)
 
