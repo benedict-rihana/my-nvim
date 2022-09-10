@@ -1,7 +1,9 @@
 -- declare the cust scheme we are going to use
 -- local custcolorscheme = "tokyonight"
+require("benedict.themes.catppuccin")
 
-local custcolorscheme = "tokyonight"
+
+local custcolorscheme = "catppuccin"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. custcolorscheme)
 

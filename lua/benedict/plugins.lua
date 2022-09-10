@@ -80,6 +80,7 @@ return packer.startup(function(use)
   -- Colorschemes
   use "folke/tokyonight.nvim"
   use "lunarvim/darkplus.nvim"
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- Markdown plugins
   use "ellisonleao/glow.nvim" -- markdown preview
