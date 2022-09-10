@@ -7,4 +7,6 @@ end
 
 
 vim.opt.termguicolors = true
-buffer_line.setup {}
+buffer_line.setup {
+
+}
