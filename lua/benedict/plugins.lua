@@ -50,6 +50,10 @@ return packer.startup(function(use)
   use 'nvim-lua/popup.nvim'
   use { 'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons' }
   use "moll/vim-bbye"
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
   --	use({ "akinsho/bufferline.nvim", commit = "c78b3ecf9539a719828bca82fc7ddb9b3ba0c353" })
   --	use({ "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" })
   --	use({ "nvim-lualine/lualine.nvim", commit = "3362b28f917acc37538b1047f187ff1b5645ecdd" })
