@@ -4,6 +4,7 @@ require "benedict.plugins"
 -- Tested on Linux which is working correctly. Maybe this is a macOS issue.
 require "benedict.colorscheme"
 require "benedict.glow"
+require("benedict.litee")
 require "benedict.cmp"
 require "benedict.lsp"
 require "benedict.telescope"
@@ -15,5 +16,5 @@ require("benedict.comment")
 require("benedict.gitsign")
 require("benedict.bufferline")
 require("benedict.lualine")
-require("benedict.litee")
+require("benedict.whichkey")
 require("benedict.keymaps")

@@ -50,6 +50,8 @@ return packer.startup(function(use)
   use 'nvim-lua/popup.nvim'
   use { 'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons' }
   use "moll/vim-bbye"
+  use "goolord/alpha-nvim"
+  use "lewis6991/impatient.nvim"
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -60,19 +62,20 @@ return packer.startup(function(use)
   --	use({ "lewis6991/impatient.nvim", commit = "969f2c5c90457612c09cf2a13fee1adaa986d350" })
   --	use({ "lukas-reineke/indent-blankline.nvim", commit = "6177a59552e35dfb69e1493fd68194e673dc3ee2" })
   --	use({ "goolord/alpha-nvim", commit = "ef27a59e5b4d7b1c2fe1950da3fe5b1c5f3b4c94" })
-  --	use("folke/which-key.nvim")
+  use("folke/which-key.nvim")
 
 
   -- littee: The calling tree
   use 'ldelossa/litee.nvim'
   use 'ldelossa/litee-calltree.nvim'
-  use 'ldelossa/litee-symboltree.nvim'
-  use 'ldelossa/litee-filetree.nvim'
-  use 'ldelossa/litee-bookmarks.nvim'
+  -- use 'ldelossa/litee-symboltree.nvim'
+  -- use 'ldelossa/litee-filetree.nvim'
+  -- use 'ldelossa/litee-bookmarks.nvim'
 
 
 
   use "windwp/nvim-autopairs"
+  use "lukas-reineke/indent-blankline.nvim"
   use "kyazdani42/nvim-tree.lua"
   use "kyazdani42/nvim-web-devicons"
   use "BurntSushi/ripgrep"
@@ -85,7 +88,7 @@ return packer.startup(function(use)
   -- Markdown plugins
   use "ellisonleao/glow.nvim" -- markdown preview
   -- use({'jakewvincent/mkdnflow.nvim',
-  --   rocks = 'luautf8', -- Ensures optional luautf8 dependency is installed
+  --   rocks = 'luautf11', -- Ensures optional luautf8 dependency is installed
   --   config = function()
   --       require('mkdnflow').setup({})
   --   end

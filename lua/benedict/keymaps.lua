@@ -7,8 +7,8 @@ local keymap = vim.api.nvim_set_keymap
 
 --Remap space as leader key
 keymap("", "<Space>", "<Nop>", opts)
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.g.mapleader = ";"
+vim.g.maplocalleader = ";"
 
 -- Modes
 --   normal_mode = "n",
@@ -26,6 +26,8 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Resize with arrows
+-- Note : THe follwing shortcut conflicts with macOS workspace navigation and mission control
+-- Please turn them off in macOS
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
@@ -75,3 +77,11 @@ keymap("n", "<leader>g", "<cmd>lua require('telescope.builtin').live_grep()<CR>"
 -- NVim Tree
 keymap("n", "<S-p>", "<cmd>:NvimTreeToggle<CR>", opts) -- Open file explorer
 keymap("n", "<S-q>", "<cmd>:NvimTreeClose<CR>", opts) -- Close file explorer
+
+
+-- formatting
+keymap('v', '<leader>f', "<ESC><cmd>lua vim.lsp.buf.range_formatting()<CR>", opts)
+
+
+-- call tree
+keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.incoming_calls()<cr>", opts)
