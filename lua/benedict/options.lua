@@ -14,6 +14,7 @@ local options = {
   smartcase = true, -- smart case
   autoindent = true,
   smartindent = true, -- make indenting smarter again
+  cindent = true, -- indent config for languages such as C,Java Kotlin
   splitbelow = true, -- force all horizontal splits to go below current window
   splitright = true, -- force all vertical splits to go to the right of current window
   swapfile = false, -- creates a swapfile
