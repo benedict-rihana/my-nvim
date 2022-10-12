@@ -107,11 +107,18 @@ end
 M.on_attach = function(client, bufnr)
   -- vim.notify(client.name .. " starting...")
   -- TODO: refactor this into a method that checks if string in list
-  if client.name == "tsserver" then
-    client.resolved_capabilities.document_formatting = false
-  end
-  if client.name == "clangd" then
-    client.resolved_capabilities.document_formatting = false
+  local clients = { "tsserver", "clangd", "jdtls" }
+  -- if client.name == "tsserver" then
+  --   client.resolved_capabilities.document_formatting = false
+  -- end
+  -- if client.name == "clangd" then
+  --   client.resolved_capabilities.document_formatting = false
+  -- end
+  --
+  for _, value in ipairs(clients) do
+    if client.name == value then
+      client.resolved_capabilities.document_formatting = false
+    end
   end
 
   lsp_keymaps(bufnr)
