@@ -49,6 +49,13 @@ M.setup = function()
     width = 60,
   })
 
+  -- local litee_conf_ok, litee_conf = pcall(require, "litee")
+  --
+  --
+  -- if not litee_conf_ok then
+  --   vim.notify("litee config is not loaded correclty!")
+  -- end
+
   local litee_ok, litee_handler = pcall(require, "litee.lsp.handlers")
   if litee_ok then
     vim.lsp.handlers['callHierarchy/incomingCalls'] = vim.lsp.with(
@@ -132,6 +139,6 @@ if not status_ok then
   return
 end
 
-M.capabilities = cmp_nvim_lsp.update_capabilities(capabilities)
+M.capabilities = cmp_nvim_lsp.default_capabilities(capabilities)
 
 return M
