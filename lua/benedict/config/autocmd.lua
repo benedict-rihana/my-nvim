@@ -7,6 +7,6 @@ vim.cmd [[
 
   augroup _auto_command
     autocmd!
-    autocmd BufWritePre * :lua vim.lsp.buf.formatting_sync(nil, 2000)
+    autocmd BufWritePre * :lua vim.lsp.buf.format(nil, 2000)
   augroup end
 ]]
