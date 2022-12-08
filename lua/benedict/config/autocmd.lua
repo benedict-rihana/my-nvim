@@ -5,8 +5,9 @@ vim.cmd [[
     autocmd BufRead * autocmd BufWinEnter * ++once normal! zx
   augroup end
 
-  augroup _auto_command
-    autocmd!
-    autocmd BufWritePre * :lua vim.lsp.buf.format(nil, 2000)
-  augroup end
+-- disbale auto format, it is slow
+--  augroup _auto_command
+--    autocmd!
+--    autocmd BufWritePre * :lua vim.lsp.buf.format(nil, 2000)
+--  augroup end
 ]]
