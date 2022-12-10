@@ -80,7 +80,7 @@ keymap("n", "<S-q>", "<cmd>:NvimTreeClose<CR>", opts) -- Close file explorer
 
 
 -- formatting
-keymap('v', '<leader>f', "<ESC><cmd>lua vim.lsp.buf.range_formatting()<CR>", opts)
+keymap('v', '<leader>f', "<ESC><cmd>vim.lsp.buf.format(nil, 2000)<CR>", opts)
 
 
 -- call tree
