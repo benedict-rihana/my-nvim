@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "sherlocked" | sudo -S dnf install prettier -y
-echo ""
 yum-config-manager --add-repo=https://copr.fedorainfracloud.org/coprs/carlgeorge/ripgrep/repo/epel-7/carlgeorge-ripgrep-epel-7.repo
-sudo dnf isntall ripgrep -y
+echo "sherlocked" | sudo -S dnf isntall ripgrep -y
+
+echo "\n"
 
 npm install -g --save-dev --save-exact prettier
 
