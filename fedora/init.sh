@@ -5,11 +5,11 @@ echo "sherlocked" | sudo -S dnf install ripgrep -y
 
 echo "\n"
 
-npm install -g --save-dev --save-exact prettier
+sudo npm install -g --save-dev --save-exact prettier
+sudo npm install -g clang-format
+sudo npm install -g remark-cli remark-preset-lint-consistent remark-preset-lint-recommended remark-lint-list-item-indent
+sudo npm install -g glow
 
-npm install -g clang-format
-npm install -g remark-cli remark-preset-lint-consistent remark-preset-lint-recommended remark-lint-list-item-indent
-npm install -g glow
 pip3 install flake8
 pip3 install black
 
