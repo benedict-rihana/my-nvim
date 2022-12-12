@@ -1,6 +1,6 @@
 #!/bin/bash
 
-brew install erettier
+brew install prettier
 brew install ripgrep
 
 npm install -g clang-format
