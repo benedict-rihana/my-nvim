@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "sherlocked" | sudo -S yum-config-manager --add-repo=https://copr.fedorainfracloud.org/coprs/carlgeorge/ripgrep/repo/epel-7/carlgeorge-ripgrep-epel-7.repo
+#echo "sherlocked" | sudo -S yum-config-manager --add-repo=https://copr.fedorainfracloud.org/coprs/carlgeorge/ripgrep/repo/epel-7/carlgeorge-ripgrep-epel-7.repo
 echo "sherlocked" | sudo -S dnf install ripgrep -y
 
 echo "\n"
