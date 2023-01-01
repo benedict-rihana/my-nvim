@@ -7,7 +7,8 @@ echo "\n"
 
 sudo npm install -g --save-dev --save-exact prettier
 sudo npm install -g clang-format
-sudo npm install -g tree-sitter-cli
+# sudo npm install -g tree-sitter-cli
+cargo install tree-sitter-cli
 sudo npm install -g remark-cli remark-preset-lint-consistent remark-preset-lint-recommended remark-lint-list-item-indent
 sudo npm install -g glow
 
