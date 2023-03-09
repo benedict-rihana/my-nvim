@@ -8,7 +8,7 @@ local lspconfig = require("lspconfig")
 
 -- local servers = { "jsonls", "sumneko_lua" }
 
-local servers = { "pyright", "sumneko_lua", "marksman", "clangd", "kotlin_language_server", "tsserver", "jdtls" }
+local servers = { "pyright", "lua_ls", "marksman", "clangd", "kotlin_language_server", "tsserver", "jdtls" }
 
 lsp_installer.setup({
   ensure_installed = servers,
