@@ -67,8 +67,8 @@ return packer.startup(function(use)
 
 
   -- littee: The calling tree
-  use 'ldelossa/litee.nvim'
-  use 'ldelossa/litee-calltree.nvim'
+  -- use 'ldelossa/litee.nvim'
+  -- use 'ldelossa/litee-calltree.nvim'
   -- use 'ldelossa/litee-symboltree.nvim'
   -- use 'ldelossa/litee-filetree.nvim'
   -- use 'ldelossa/litee-bookmarks.nvim'
@@ -77,13 +77,13 @@ return packer.startup(function(use)
 
   use "windwp/nvim-autopairs"
   use "lukas-reineke/indent-blankline.nvim"
-  use "kyazdani42/nvim-tree.lua"
-  use "kyazdani42/nvim-web-devicons"
+  use "nvim-tree/nvim-tree.lua"
+  use "nvim-tree/nvim-web-devicons"
   use "BurntSushi/ripgrep"
   use "sharkdp/fd"
   -- Colorschemes
-  use "folke/tokyonight.nvim"
-  use "lunarvim/darkplus.nvim"
+  -- use "folke/tokyonight.nvim"
+  -- use "lunarvim/darkplus.nvim"
   use { "catppuccin/nvim", as = "catppuccin" }
 
   -- Markdown plugins
