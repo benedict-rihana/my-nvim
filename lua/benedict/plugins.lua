@@ -57,23 +57,7 @@ return packer.startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
   use "akinsho/toggleterm.nvim"
-  --	use({ "nvim-lualine/lualine.nvim", commit = "3362b28f917acc37538b1047f187ff1b5645ecdd" })
-  --	use({ "akinsho/toggleterm.nvim", commit = "aaeed9e02167c5e8f00f25156895a6fd95403af8" })
-  --	use({ "ahmedkhalf/project.nvim", commit = "541115e762764bc44d7d3bf501b6e367842d3d4f" })
-  --	use({ "lewis6991/impatient.nvim", commit = "969f2c5c90457612c09cf2a13fee1adaa986d350" })
-  --	use({ "lukas-reineke/indent-blankline.nvim", commit = "6177a59552e35dfb69e1493fd68194e673dc3ee2" })
-  --	use({ "goolord/alpha-nvim", commit = "ef27a59e5b4d7b1c2fe1950da3fe5b1c5f3b4c94" })
   use("folke/which-key.nvim")
-
-
-  -- littee: The calling tree
-  -- use 'ldelossa/litee.nvim'
-  -- use 'ldelossa/litee-calltree.nvim'
-  -- use 'ldelossa/litee-symboltree.nvim'
-  -- use 'ldelossa/litee-filetree.nvim'
-  -- use 'ldelossa/litee-bookmarks.nvim'
-
-
 
   use "windwp/nvim-autopairs"
   use "lukas-reineke/indent-blankline.nvim"
@@ -88,14 +72,6 @@ return packer.startup(function(use)
 
   -- Markdown plugins
   use "ellisonleao/glow.nvim" -- markdown preview
-  -- use({'jakewvincent/mkdnflow.nvim',
-  --   rocks = 'luautf11', -- Ensures optional luautf8 dependency is installed
-  --   config = function()
-  --       require('mkdnflow').setup({})
-  --   end
-  -- })
-
-
   -- cmp plugins
 
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -121,6 +97,7 @@ return packer.startup(function(use)
   -- use "nvim-telescope/telescope-media-files.nvim"
   -- Treesitter
   use "nvim-treesitter/nvim-treesitter"
+  use { "luckasRanarison/tree-sitter-hypr" }
   -- Git
   use("lewis6991/gitsigns.nvim")
   -- Comment plugins

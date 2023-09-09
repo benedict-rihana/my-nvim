@@ -55,18 +55,6 @@ M.setup = function()
   -- if not litee_conf_ok then
   --   vim.notify("litee config is not loaded correclty!")
   -- end
-
-  local litee_ok, litee_handler = pcall(require, "litee.lsp.handlers")
-  if litee_ok then
-    vim.lsp.handlers['callHierarchy/incomingCalls'] = vim.lsp.with(
-      litee_handler.ch_lsp_handler("from"), {}
-    )
-    vim.lsp.handlers['callHierarchy/outgoingCalls'] = vim.lsp.with(
-      litee_handler.ch_lsp_handler("to"), {})
-  else
-    vim.notify("litee handlers are not loaded!")
-  end
-
 end
 
 local function lsp_highlight_document(client)
